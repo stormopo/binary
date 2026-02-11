@@ -1,0 +1,22 @@
+{
+  "name": "start",
+  "version": "1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "test": "node test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-machine-id": "^1.1.12",
+    "socket.io-client": "^4.7.5",
+    "ssh2": "^1.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "@primno/dpapi": "^1.1.2"
+  }
+}

